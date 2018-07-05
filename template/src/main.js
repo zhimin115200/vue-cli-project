@@ -6,6 +6,7 @@ import router from './router'
 
 import directives from './common/directive/directive.js'
 import filters from './common/filter/filter.js'
+import store from './store/store.js'
 
 Vue.use(directives)
 
@@ -19,6 +20,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

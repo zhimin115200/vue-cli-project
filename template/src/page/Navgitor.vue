@@ -37,7 +37,7 @@ export default {
     goPage1: function () {
       this.$router.push({path: `page1`,
         query: {
-          msg: '测试传参'
+          msg: 'sdfghhjk'
         }})
     }
   }
