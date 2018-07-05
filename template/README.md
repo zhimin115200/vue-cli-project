@@ -2,26 +2,74 @@
 
 > 熙康脚手架工程
 
-## Build Setup
+> 下载脚手架
+npm zhimin115200/webpack demo-project
+包含：路由跳转、状态管理、父子组件通信等
+
+## 项目结构
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+│  index.html
+│  package.json
+│  README.md
+├─build
+│      build.js
+│      check-versions.js
+│      logo.png
+│      utils.js
+│      vue-loader.conf.js
+│      webpack.base.conf.js
+│      webpack.dev.conf.js
+│      webpack.prod.conf.js
+├─config
+│      dev.env.js
+│      index.js
+│      prod.env.js
+│      test.env.js
+├─node_modules
+├─src
+│  │  App.vue
+│  │  main.js
+│  │
+│  ├─assets //静态资源
+│  │  │  logo.png
+│  │  │  readme.txt
+│  │  │
+│  │  └─style
+│  │          app.css
+│  │
+│  ├─common //通用
+│  │  │  readme.txt
+│  │  │
+│  │  ├─directive //全局指令
+│  │  │      directive.js
+│  │  │
+│  │  ├─filter //全局过滤器
+│  │  │      filter.js
+│  │  │
+│  │  └─util //工具函数
+│  ├─components //项目内通用组件
+│  │      MyButton.vue
+│  │      readme.txt
+│  │
+│  ├─page //页面
+│  │      Navgitor.vue
+│  │      page1.vue
+│  │      readme.txt
+│  │
+│  ├─router //路由
+│  │      index.js
+│  │      readme.txt
+│  │
+│  ├─service //业务逻辑
+│  │      page1.service.js
+│  │      readme.txt
+│  │
+│  └─store //全局状态管理
+│          readme.txt
+│          store.js
+│
+├─static
+│
+└─test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
