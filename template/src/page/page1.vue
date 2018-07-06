@@ -7,12 +7,14 @@
     <button v-on:click="callService">调用service</button>
     <h3>父组件{{myButtonData}}</h3>
     <MyButton></MyButton>
+    <button v-on:click="restApi">调用RestApi</button>
   </div>
 </template>
 
 <script>
 import PageService from '../service/page1.service.js'
 import MyButton from '../components/MyButton.vue'
+import RestApi from 'xk-restapi'
 export default {
   components: {
     MyButton
@@ -38,6 +40,14 @@ export default {
     },
     callService: function () {
       alert(PageService.getAAA())
+    },
+    restApi: function () {
+      RestApi.call('test_list', function (res) {
+        console.log('test_list' + JSON.stringify(res))
+      })
+      RestApi.call('test_one', function (res) {
+        console.log('test_one' + JSON.stringify(res))
+      }, [{id: '1'}])
     }
   },
   mounted: function () {}
