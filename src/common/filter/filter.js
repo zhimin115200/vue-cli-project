@@ -1,5 +1,5 @@
 const filter = {
-  plus5: function (value) {
+  plus: function (value) {
     return value + 5
   }
 }
