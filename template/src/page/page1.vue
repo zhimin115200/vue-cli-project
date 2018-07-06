@@ -4,7 +4,7 @@
     directive:<input v-focus/>
     <h1>传参：{{ msg }}</h1>
     <button v-on:click="callService">调用service</button>
-    <h2>过滤器：{{value | plus('￥')}}</h2>
+    <h2>过滤器：{{value}}</h2>
     <h3>父组件{{myButtonData}}</h3>
     <MyButton></MyButton>
     <button v-on:click="restApi">调用RestApi</button>
