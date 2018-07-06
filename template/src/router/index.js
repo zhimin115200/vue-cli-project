@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Navgitor from '@/page/Navgitor'
-import page1 from '@/page/page1'
+import Navgitor from '../page/Navgitor'
+import page1 from '../page/page1'
 
 Vue.use(Router)
 
