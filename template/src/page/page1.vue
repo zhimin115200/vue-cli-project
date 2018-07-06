@@ -3,7 +3,7 @@
     <a v-on:click="goback">返回</a>
     directive:<input v-focus/>
     <h1>传参：{{ msg }}</h1>
-    <h3>filter：{{value | plus5}}</h3>
+    <h3>filter：{{value | plus5()}}</h3>
     <button v-on:click="callService">调用service</button>
     <h3>父组件{{myButtonData}}</h3>
     <MyButton></MyButton>
