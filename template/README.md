@@ -3,8 +3,8 @@
 > 熙康脚手架工程
 
 > 下载脚手架
-### npm zhimin115200/webpack demo-project
-### 包含：路由跳转、状态管理、父子组件通信等
+vue init zhimin115200/webpack demo-project
+包含：路由跳转、状态管理、父子组件通信等
 
 ## 项目结构
 
