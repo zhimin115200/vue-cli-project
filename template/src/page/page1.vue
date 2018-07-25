@@ -41,12 +41,24 @@ export default {
       alert(PageService.getAAA())
     },
     restApi: function () {
-      RestApi.call('test_list', function (res) {
-        console.log('test_list' + JSON.stringify(res))
+      var options = {
+        operatorType: 'withdraw_testPostSign',
+        config: {
+          mode: 'dev',
+          baseUrl: 'http://3u7mm4.natappfree.cc/chwealth/api/v1',
+          authEnable: true,
+          authSecret: '123'
+        },
+        pathParams: [{id: '1'}, {a: 'sdf'}],
+        queryParams: {age: '123', zoom: '你好', token: 'qwesdf', f: 'as', d: '123', b: 152},
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8'
+        },
+        requestBody: {businessCode: '1', ownerCode: '娶你'}
+      }
+      RestApi.call(options, function (res) {
+        console.log('withdraw_testPostSign' + JSON.stringify(res))
       })
-      RestApi.call('test_one', function (res) {
-        console.log('test_one' + JSON.stringify(res))
-      }, [{id: '1'}])
     }
   },
   mounted: function () {}
